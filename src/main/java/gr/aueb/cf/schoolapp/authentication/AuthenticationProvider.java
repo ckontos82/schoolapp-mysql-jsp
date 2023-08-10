@@ -13,19 +13,7 @@ public class AuthenticationProvider {
     private AuthenticationProvider() {}
 
     public static boolean authenticate(UserLoginDTO userLoginDTO) {
-        try {
-            String username = userLoginDTO.getUsername();
-            String password = userLoginDTO.getPassword();
-
-            //System.out.println("authenticate" + userLoginDTO.getUsername());
-//        if (userLoginDTO.getUsername().equals("test@aueb.gr")) {
-//            return false;
-//        }
-            if (userDAO.findByUsername(username) != null) {
-                return BCrypt.checkpw(password, userDAO.findByUsername(username).getPassword());
-            } else return false;
-        } catch (UserDAOException | NullPointerException e) {
-            return false;
-        }
+        //System.out.println("authenticate" + userLoginDTO.getUsername());
+        return userDAO.isUserValid(userLoginDTO.getUsername(), userLoginDTO.getPassword());
     }
 }

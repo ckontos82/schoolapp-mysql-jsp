@@ -5,9 +5,6 @@ package gr.aueb.cf.schoolapp.dao;
 
 //import java.util.List;
 
-import gr.aueb.cf.schoolapp.dao.exceptions.UserDAOException;
-import gr.aueb.cf.schoolapp.model.User;
-
 public interface IUserDAO {
 //    User insert(User user) throws UserDAOException;
 //    User update(User user) throws UserDAOException;
@@ -15,5 +12,7 @@ public interface IUserDAO {
 //    List<User> getAll();
 //    User getByUsername(String username); // throws UserDAOException;
 
-    User findByUsername(String username) throws UserDAOException;
+//    User findByUsername(String username) throws UserDAOException;
+
+    boolean isUserValid(String username, String password);
 }

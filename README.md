@@ -4,5 +4,4 @@
 ***
 ### Using Service-Oriented Architecture and MVC.
 ***
-In order for this app to work flawlessly, for login, in your database 
-you must store hashed passwords using JBCrypt.
+In order for this app to work flawlessly, for login, you must store in the database hashed passwords using JBCrypt.

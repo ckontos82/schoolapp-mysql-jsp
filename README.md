@@ -1,5 +1,5 @@
 # schoolapp-mysql-jsp
-## A Full Stack Web App using Maven, Java EE 8, jsp and MySql
+## A Full Stack Web App using Maven, Java EE 8, JSP and MySql
 
 ***
 ### Using Service-Oriented Architecture and MVC.
